@@ -37,9 +37,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="frd-aj-S3J">
-                                <rect key="frame" x="20" y="739" width="164" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="frd-aj-S3J">
+                                <rect key="frame" x="20" y="111" width="197" height="36"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="zpH-Zv-DTE"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="YSDisplay-Medium" family="YS Display" pointSize="20"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -70,9 +73,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="thy-Bl-Ydc">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="thy-Bl-Ydc">
                                 <rect key="frame" x="237" y="739" width="157" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="YSDisplay-Medium" family="YS Display" pointSize="20"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -90,8 +92,14 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="frd-aj-S3J" secondAttribute="bottom" constant="63" id="AgQ-dW-7SL"/>
+                            <constraint firstItem="thy-Bl-Ydc" firstAttribute="leading" secondItem="frd-aj-S3J" secondAttribute="trailing" constant="20" id="CYF-od-JJ3"/>
+                            <constraint firstItem="thy-Bl-Ydc" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="20" id="UWw-pG-1EQ"/>
+                            <constraint firstItem="thy-Bl-Ydc" firstAttribute="height" secondItem="frd-aj-S3J" secondAttribute="height" id="W4C-NU-US1"/>
                             <constraint firstItem="frd-aj-S3J" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="axy-u8-jJx"/>
-                            <constraint firstItem="frd-aj-S3J" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="36" id="lE6-6D-7bO"/>
+                            <constraint firstItem="frd-aj-S3J" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="lE6-6D-7bO"/>
+                            <constraint firstItem="thy-Bl-Ydc" firstAttribute="width" secondItem="frd-aj-S3J" secondAttribute="width" id="lJI-KA-s3H"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="thy-Bl-Ydc" secondAttribute="bottom" constant="34" id="qwf-Pv-fFX"/>
                         </constraints>
                     </view>
                 </viewController>
